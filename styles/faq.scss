@@ -1,0 +1,30 @@
+.faq {
+  padding: 100px 0;
+  .faq-items {
+    padding-top: 18px;
+  }
+  .faq-item {
+    border-bottom: 1px solid #000;
+    margin-bottom: 0.9em;
+
+    .faq-question_h3 {
+      width: 100%;
+      cursor: pointer;
+      &:after {
+        content: "\2795";
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin: 5px 0 5px 0;
+      }
+    }
+    .faq-answer_p {
+      display: none;
+      padding-bottom: 15px;
+      font-size: 15px;
+    }
+    .show {
+      display: block;
+    }
+  }
+}
