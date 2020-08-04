@@ -1,6 +1,17 @@
 <section class="page-width faq">
   <h2>Frequently Asked Questions</h2>
-  
+  <div class="faq-items">
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'question' -%}
+      <div {{ block.shopify_attributes }}>
+          <div >
+                <h4>{{block.settings.title}}</h4>
+                <p>{{block.settings.answer}}</p>
+          </div>   
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+  </div>
 </section>
 
 
