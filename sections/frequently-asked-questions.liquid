@@ -1,0 +1,44 @@
+<section class="page-width faq">
+  <h2>Frequently Asked Questions</h2>
+  
+</section>
+
+
+{% schema %}
+  {
+    "name": "FAQ",
+    "blocks": [
+       {
+        "type": "question",
+        "name": "faq",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Question"
+          },
+          {
+            "type": "text",
+            "id": "answer",
+            "label": "Answer"
+          }
+        ]
+       }
+    ],
+
+    "presets": [
+        {
+            "category": "Store information",
+            "name": "FAQs"
+        }
+
+    ]
+  } 
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
