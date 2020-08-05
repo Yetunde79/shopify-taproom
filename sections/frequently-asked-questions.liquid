@@ -50,6 +50,8 @@
   const faqs = document.getElementsByClassName("faq-question_h3");
   let faqCount;
 
+  faqs.classList.toggle("active");
+
   for (faqCount = 0; faqCount < faqs.length; faqCount++) {
       faqs[faqCount].onclick = function(){
         this.nextElementSibling.classList.toggle("show");
