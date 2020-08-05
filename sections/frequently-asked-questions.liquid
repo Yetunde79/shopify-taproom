@@ -4,10 +4,8 @@
   {%- for block in section.blocks -%}
     {%- if block.type == 'question' -%}
       <div class="faq-item" {{ block.shopify_attributes }}>
-          <div class="faq-question_block">
-                <h4 class="faq-question_h3">{{block.settings.title}}</h4>
-                <p class="faq-answer_p">{{block.settings.answer}}</p>
-          </div>   
+          <h4 class="faq-question_h3">{{block.settings.title}}</h4>
+          <p class="faq-answer_p">{{block.settings.answer}}</p>
       </div>
     {%- endif -%}
   {%- endfor -%}
@@ -29,7 +27,7 @@
             "label": "Question"
           },
           {
-            "type": "text",
+            "type": "textarea",
             "id": "answer",
             "label": "Answer"
           }
